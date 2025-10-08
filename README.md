@@ -1,92 +1,120 @@
-# Cộng hòa Xã hội Chủ nghĩa Việt Nam
-# Độc lập - Tự do - Hạnh phúc
+# 🐟 Koi Pond Game
 
-# Koi Pond Game
-
-Một trò chơi chạy trên terminal, nơi bạn điều khiển một con cá Koi bơi trong ao, ăn thức ăn và tận hưởng môi trường yên bình.
+*A terminal-based koi fish simulation game.*
 
 ---
 
-# Socialist Republic of Vietnam
-# Independence - Freedom - Happiness
+## 🧩 Overview
 
-# Koi Pond Game
+**Koi Pond Game** is a lightweight, terminal-based simulation where the player controls a koi fish swimming peacefully in a pond.
+The goal is simple: eat food, grow over time, and enjoy a dynamic ASCII-art environment accompanied by relaxing background music.
 
-A terminal-based game where you control a koi fish swimming in a pond, eating food, and enjoying a peaceful environment.
+The project combines simple behavioral simulation, visual ASCII aesthetics, and ambient sound design to create a calm and meditative gameplay experience.
 
-## Tính năng / Features
+---
 
-- Nghệ thuật ASCII đẹp mắt / Beautiful ASCII art
-- Môi trường động với cây cối, đá, và các sinh vật khác / Dynamic environment with trees, rocks, and other creatures
-- Nhiều loại thức ăn với điểm số khác nhau / Various types of food with different scores
-- Cơ chế tăng trưởng khi cá ăn nhiều / Growth mechanism as the fish eats more
-- Nước và môi trường được hoạt hình / Animated water and environment
-- Hệ thống cho ăn tương tác với các loài sinh vật tranh nhau ăn / Interactive feeding system with competing creatures
-- Nhạc nền thư giãn / Relaxing background music
+## 🌟 Features
 
-## Cách chơi / How to Play
+* 🎨 **Beautiful ASCII art** — handcrafted ASCII visuals representing water, plants, rocks, and other creatures.
+* 🌿 **Dynamic environment** — animated pond life and interactive elements.
+* 🍽️ **Multiple food types** — each with unique point values and effects.
+* 🐡 **Growth system** — your koi grows as it consumes more food.
+* 💧 **Animated water and movement** — subtle, continuous motion throughout the environment.
+* 🎵 **Relaxing background music** — integrated through `pygame`.
+* 🤖 **Interactive AI creatures** — other pond inhabitants compete for food.
 
-1. Cài đặt game: `pip install -e .` hoặc `pip install .` / Install the game: `pip install -e .` or `pip install .`
-2. Chạy game bằng lệnh: `feedmyfish` / Run the game with the command: `feedmyfish`
-3. Sử dụng các phím mũi tên để điều khiển cá Koi: / Use arrow keys to control the koi fish:
-   - ↑: Di chuyển lên / Move up
-   - ↓: Di chuyển xuống / Move down
-   - ←: Di chuyển trái / Move left
-   - →: Di chuyển phải / Move right
-4. Ném thức ăn cho cá: / Throw food for the fish:
-   - 1: Ném hạt thức ăn (Pellet) / Throw pellet
-   - 2: Ném mảnh thức ăn (Flake) / Throw flake
-   - 3: Ném giun (Worm) / Throw worm
-5. Điều khiển nhạc: / Control music:
-   - +/-: Tăng/giảm âm lượng / Increase/decrease volume
-   - P: Bài tiếp theo / Next track
-   - O: Tạm dừng/tiếp tục / Pause/resume
-   - I: Bài trước / Previous track
-6. Nhấn 'q' để thoát game / Press 'q' to exit the game
+---
 
-## Loại thức ăn / Types of Food
+## 🎮 How to Play
 
-- Pellet (O): 1 điểm / 1 point
-- Flake (*): 1 điểm / 1 point
-- Worm (~): 2 điểm / 2 points
+1. **Install the game:**
 
-## Yêu cầu / Requirements
-
-- Python 3.6+
-- pygame (nhạc nền / background music)
-- windows-curses (cho Windows / for Windows)
-
-## Cài đặt / Installation
-
-### Từ GitHub / From GitHub
-
-1. Clone repository về: / Clone the repository:
-   ```
-   git clone <your-repository-url>
-   cd koi-game
-   ```
-
-2. Cài đặt trò chơi: / Install the game:
-   ```
-   # Cài đặt trong chế độ phát triển / Install in development mode
+   ```bash
    pip install -e .
-   
-   # Hoặc cài đặt thông thường / Or install normally
+   # or
    pip install .
    ```
 
-3. Chạy trò chơi: / Run the game:
-   ```
+2. **Run the game:**
+
+   ```bash
    feedmyfish
    ```
 
-### Từ PyPI (Khi đã xuất bản) / From PyPI (When published)
+3. **Controls:**
 
+   | Key   | Action                     |
+   | ----- | -------------------------- |
+   | ↑     | Move up                    |
+   | ↓     | Move down                  |
+   | ←     | Move left                  |
+   | →     | Move right                 |
+   | 1     | Throw pellet (1 point)     |
+   | 2     | Throw flake (1 point)      |
+   | 3     | Throw worm (2 points)      |
+   | + / - | Increase / decrease volume |
+   | P     | Next track                 |
+   | O     | Pause / resume             |
+   | I     | Previous track             |
+   | q     | Quit the game              |
+
+---
+
+## ⚙️ Requirements
+
+* Python ≥ 3.6
+* `pygame` (for background music)
+* `windows-curses` (required on Windows only)
+
+---
+
+## 📦 Installation
+
+### From GitHub
+
+```bash
+git clone <your-repository-url>
+cd koi-game
+
+# Development mode
+pip install -e .
+
+# or standard installation
+pip install .
 ```
+
+### Run the Game
+
+```bash
+feedmyfish
+```
+
+### From PyPI (once published)
+
+```bash
 pip install feedmyfish
 feedmyfish
 ```
 
-## Tương thích / Compatibility
+---
 
-Game hoạt động trên cả Linux và Windows. Trên Windows, package windows-curses sẽ được tự động cài đặt. / The game works on both Linux and Windows. On Windows, the windows-curses package will be automatically installed.
+## 💻 Compatibility
+
+* Fully compatible with **Linux** and **Windows**.
+* On Windows, the `windows-curses` package will be installed automatically.
+
+---
+
+## 🧠 Future Development
+
+* Expand AI behavior for other pond creatures.
+* Enhance koi movement and response realism.
+* Add multiplayer (LAN) support.
+* Improve visual effects and soundscapes.
+* Introduce save/load and scoring system.
+
+---
+
+## 📜 License
+
+This project is released under the **MIT License**.
