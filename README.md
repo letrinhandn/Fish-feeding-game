@@ -73,7 +73,7 @@ The project combines simple behavioral simulation, visual ASCII aesthetics, and 
 ### From GitHub
 
 ```bash
-git clone <https://github.com/letrinhandn/Fish-feeding-game.git>
+git clone https://github.com/letrinhandn/Fish-feeding-game.git
 cd koi-game
 
 # Development mode
